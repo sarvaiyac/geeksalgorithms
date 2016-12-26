@@ -6,7 +6,6 @@
 //  Copyright � 2016 Chintan Sarvaiya. All rights reserved.
 //
 //
-//  Student id : 27148879
 //  COMP 6651, Programming Assignment 2
 //
 //

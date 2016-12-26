@@ -4,8 +4,7 @@
  * main.cpp
  * Assignment_3  
  * Created by Chintan Sarvaiya on 2016-11-24. 
- * Copyright � 2016 Chintan Sarvaiya. All rights reserved. 
- * Student id : 27148879 
+ * Copyright � 2016 Chintan Sarvaiya. All rights reserved.
  * COMP 6651, Programming Assignment 3   
  * 
  * https://www.youtube.com/watch?v=s6FhG--P7z0
@@ -29,8 +28,8 @@ public class First {
 		// TODO Auto-generated method stub
 //		System.out.println("Hello world");
 		long start = System.currentTimeMillis();
-		String file_name = "/Users/chintansarvaiya/Documents/Masters/Fall 2016/Algorithm 2016/Assignments/Prog Assi 3/input2.txt";
-		String output_file_name = "/Users/chintansarvaiya/Documents/Masters/Fall 2016/Algorithm 2016/Assignments/Prog Assi 3/output.txt";
+		String file_name = "input2.txt";
+		String output_file_name = "output.txt";
 		String currentLine = null;
 
 		String answers = "";

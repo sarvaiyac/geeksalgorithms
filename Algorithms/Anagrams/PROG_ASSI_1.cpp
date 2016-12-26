@@ -6,7 +6,6 @@
 //  Copyright © 2016 Chintan Sarvaiya. All rights reserved.
 //
 //
-//  Student id : 27148879
 //  COMP 6651, Programming Assignment 1
 //
 //
@@ -39,9 +38,9 @@ http://stackoverflow.com/a/2395311/1162201
 
 using namespace std;
 
-const string FILE_NAME = "/Users/chintansarvaiya/Documents/Masters/Fall 2016/Algorithm 2016/Assignments/Prog assi1/Assignment_1/Assignment_1/input2.txt";
+const string FILE_NAME = "input2.txt";
 
-const string OUTPUT_FILE_NAME = "/Users/chintansarvaiya/Documents/Masters/Fall 2016/Algorithm 2016/Assignments/Prog assi1/Assignment_1/Assignment_1/output.txt";
+const string OUTPUT_FILE_NAME = "output.txt";
 
 int main(int argc, const char * argv[]) {
     // insert code here...
