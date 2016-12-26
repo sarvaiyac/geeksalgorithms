@@ -1,0 +1,349 @@
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+--------------------
+
++--------------------+
+|                    |
+|                    |
+|                    |
+|                    |
+|                    |
+|                    |
+|                    |
+|                    |
+|                    |
+|                    |
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
++--------------------+
+
+--------------------
+--------------------
+--------*-----------
+--------**----------
+--------***---------
+--------****--------
+--------*****-------
+--------******------
+--------------------
+--------------------
+
++--------------------+
+|                    |
+|                    |
+|                    |
+|                    |
+|         *          |
+|         **         |
+|         ***        |
+|         ****       |
+|         *****      |
+|         ******     |
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|^^^O^^^^^^^^^^^^^^^^|
+|^^^OO^^^^^^^^^^^^^^^|
+|^^^OOO^^^^^^^^^^^^^^|
+|^^^OOOO^^^^^^^^^^^^^|
+|^^^OOOOO^^^^^^^^^^^^|
+|^^^OOOOOO^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^^^^^|
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|^^^O^^^^^^^^^^^^^^^^|
+|^^^OO^^^^^^^^^^^^^^^|
+|^^^OOO^^^^^^^^^^^^^^|
+|^^^OOOO^^^^^^^^^^^^^|
+|^^^OOOOO^^^^^^^^^^^^|
+|^^^OOOOOO^^^^^^^^^^^|
+|^^^^^^^^^^^^^^^^*^^^|
+|^^^^^^^^^^^^^^^^**^^|
+|^^^^^^^^^^^^^^^^***^|
+|^^^^^^^^^^^^^^^^****|
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|                    |
+|     *              |
+|    ***             |
+|   *****            |
+|  ******* O         |
+| *********          |
+|  *******           |
+|   *****            |
+|    ***             |
+|     *              |
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|                    |
+|    *               |
+|   ***              |
+|  *****             |
+| *******   O        |
+|  *****   OOO       |
+|   ***              |
+|    *               |
+|                    |
+|                    |
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|                    |
+|   *                |
+|  ***               |
+| *****              |
+|  ***       O       |
+|   *       OOO      |
+|          OOOOO     |
+|                    |
+|                    |
+|                    |
++--------------------+
+
++--------------------+
+|A framed canvas     |
+|--------------------|
+|                    |
+|  *                 |
+| ***                |
+|  *                 |
+|             O      |
+|            OOO     |
+|           OOOOO    |
+|          OOOOOOO   |
+|                    |
+|                    |
++--------------------+
+
++---------------------------------------------+
+|A Geometric House: Front View                |
+|---------------------------------------------|
+|                                             |
+|                     /                       |
+|                    ///                      |
+|                   /////                     |
+|                  ///////                    |
+|                 /////////                   |
+|                ///////////                  |
+|    HH         /////////////                 |
+|    HH        ///////////////                |
+|    HH       /////////////////               |
+|    HH      ///////////////////              |
+|    HH     //////HHHHHHHHH//////             |
+|    HH    ///////H       H///////            |
+|    HH   ////////H       H////////           |
+|    HH  /////////H       H/////////          |
+|    HH //////////HHHHHHHHH//////////         |
+|    HH///////////////////////////////        |
+|    H/////////////////////////////////       |
+|    ///////////////////////////////////      |
+|   /////////////////////////////////////     |
+|  ///////////////////////////////////////    |
+| /////////////////////////////////////////   |
+| :::::::::::::::::::::::::::::::::::::::::   |
+| :::::::::::::::::::::::::::::::::::::::::   |
+| :::::::::::::::::::::WWWWWWWWWWWWWWW:::::   |
+| ::::::O::::::::::::::WWWWWWWWWWWWWWW:::::   |
+| :::::OOO:::::::::::::::::::::::::::::::::   |
+| ::::OOOOO::::::::::::::::::::::::::::::::   |
+| :::OOOOOOO:::::::::::ddddddd=ddddddd:::::   |
+| ::::OOOOO::::::::::::ddddddd=ddddddd:::::   |
+| :::::OOO:::::::::::::ddddddd=ddddddd:::::   |
+| ::::::O::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::ddddddd=ddddddd:::::   |
+| :::DDDD::::::::::::::ddddddd=ddddddd:::::   |
+| :::DDDD::::::::::::::ddddddd=ddddddd:::::   |
+| :::::::::::::::::::::::::::::::::::::::::   |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
+|                                             |
++---------------------------------------------+
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      Chimeny on the roof
+Id:               4
+H extent:         2
+V extent:         14
+Scr Area:         28
+Geo Area:         28.00
+Scr Perimeter:    28
+Geo Perimeter:    32.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Isosceles
+Generic name:     P9Isosceles
+Description:      House roof
+Id:               5
+H extent:         41
+V extent:         21
+Scr Area:         441
+Geo Area:         430.50
+Scr Perimeter:    80
+Geo Perimeter:    99.69
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      Frame around skylight
+Id:               6
+H extent:         9
+V extent:         5
+Scr Area:         45
+Geo Area:         45.00
+Scr Perimeter:    24
+Geo Perimeter:    28.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      skylight
+Id:               7
+H extent:         7
+V extent:         3
+Scr Area:         21
+Geo Area:         21.00
+Scr Perimeter:    16
+Geo Perimeter:    20.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      Front wall
+Id:               8
+H extent:         41
+V extent:         22
+Scr Area:         902
+Geo Area:         902.00
+Scr Perimeter:    122
+Geo Perimeter:    126.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      Front Left Door
+Id:               9
+H extent:         7
+V extent:         15
+Scr Area:         105
+Geo Area:         105.00
+Scr Perimeter:    40
+Geo Perimeter:    44.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      Front Right Door
+Id:               10
+H extent:         7
+V extent:         15
+Scr Area:         105
+Geo Area:         105.00
+Scr Perimeter:    40
+Geo Perimeter:    44.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      Vertical center panel between front doors
+Id:               11
+H extent:         1
+V extent:         15
+Scr Area:         15
+Geo Area:         15.00
+Scr Perimeter:    28
+Geo Perimeter:    32.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    9Rectangle
+Generic name:     P9Rectangle
+Description:      A rectangle  doggy door
+Id:               13
+H extent:         4
+V extent:         2
+Scr Area:         8
+Geo Area:         8.00
+Scr Perimeter:    8
+Geo Perimeter:    12.00
+
+Shape Information
+-----------------
+Type of this:    PK5Shape
+Type of *this:    7Rhombus
+Generic name:     P7Rhombus
+Description:      Diamond shape window on front wall
+Id:               14
+H extent:         7
+V extent:         7
+Scr Area:         25
+Geo Area:         24.50
+Scr Perimeter:    12
+Geo Perimeter:    19.80
+
+Program ended with exit code: 0

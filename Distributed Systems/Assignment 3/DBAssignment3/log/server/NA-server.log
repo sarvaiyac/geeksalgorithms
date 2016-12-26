@@ -1,0 +1,75 @@
+Mar 25, 2014 8:27:03 PM com.gamelib.helpers.LogHelper createLog
+INFO: Create account is requested from 132.1.1.1 with username : chintansarv
+
+Mar 25, 2014 8:27:03 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account successfully created with username : chintansarv
+
+Mar 25, 2014 8:27:31 PM com.gamelib.helpers.LogHelper createLog
+INFO: transferAccount request from NA ( 132.1.1.1 ) with username : chintansarv
+
+Mar 25, 2014 8:27:31 PM com.gamelib.helpers.LogHelper createLog
+INFO: suspendAccount request from 132.1.1.1 with username : admin for user with username : chintansarv
+
+Mar 25, 2014 8:27:31 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account with username : chintansarv Suspend Successfully
+
+Mar 25, 2014 8:27:31 PM com.gamelib.helpers.LogHelper createLog
+INFO: account transferred to EU ( 93.1.1.1 ) with username : chintansarv
+
+Mar 25, 2014 8:27:31 PM com.gamelib.helpers.LogHelper createLog
+INFO: account transferred to EU ( 93.1.1.1 ) with username : chintansarv
+
+Mar 25, 2014 8:29:59 PM com.gamelib.helpers.LogHelper createLog
+INFO: getPlayerStatus request from 132... with username : admin
+
+Mar 25, 2014 8:29:59 PM com.gamelib.helpers.LogHelper createLog
+INFO: result:NA : 0 online, 1 offline
+EU : 1 online, 0 offline
+AS : 1 online, 0 offline
+
+
+Mar 25, 2014 8:30:30 PM com.gamelib.helpers.LogHelper createLog
+INFO: getPlayerStatus request from 132... with username : admin
+
+Mar 25, 2014 8:30:30 PM com.gamelib.helpers.LogHelper createLog
+INFO: result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:39:37 PM com.gamelib.helpers.LogHelper createLog
+INFO: getPlayerStatus request from 132... with username : admin
+
+Mar 25, 2014 8:39:37 PM com.gamelib.helpers.LogHelper createLog
+INFO: result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:39:38 PM com.gamelib.helpers.LogHelper createLog
+INFO: getPlayerStatus request from 132... with username : admin
+
+Mar 25, 2014 8:39:38 PM com.gamelib.helpers.LogHelper createLog
+INFO: result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:39:38 PM com.gamelib.helpers.LogHelper createLog
+INFO: getPlayerStatus request from 132... with username : admin
+
+Mar 25, 2014 8:39:38 PM com.gamelib.helpers.LogHelper createLog
+INFO: result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:49:37 PM com.gamelib.helpers.LogHelper createLog
+INFO: getPlayerStatus request from 132.1.1.1 with username : admin
+
+Mar 25, 2014 8:49:37 PM com.gamelib.helpers.LogHelper createLog
+INFO: result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 1 online, 0 offline
+
+

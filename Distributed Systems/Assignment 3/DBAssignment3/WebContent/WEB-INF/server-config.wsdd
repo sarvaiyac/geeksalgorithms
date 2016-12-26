@@ -1,0 +1,184 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="/Users/chintansarvaiya/Documents/Workspace_kepler/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DBAssignment3/WEB-INF/attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:service name="ServerEU" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="createPlayerAccount" qname="ns1:createPlayerAccount" returnQName="ns1:createPlayerAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+   <ns2:parameter qname="ns1:firstname" type="xsd:string"/>
+   <ns2:parameter qname="ns1:lastname" type="xsd:string"/>
+   <ns2:parameter qname="ns1:age" type="xsd:int"/>
+   <ns2:parameter qname="ns1:username" type="xsd:string"/>
+   <ns2:parameter qname="ns1:password" type="xsd:string"/>
+   <ns2:parameter qname="ns1:ipaddress" type="xsd:string"/>
+  </ns2:operation>
+  <ns1:operation name="playerSignIn" qname="ns2:playerSignIn" returnQName="ns2:playerSignInReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns2:username" type="xsd:string"/>
+   <ns1:parameter qname="ns2:password" type="xsd:string"/>
+   <ns1:parameter qname="ns2:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="playerSignOut" qname="ns3:playerSignOut" returnQName="ns3:playerSignOutReturn" returnType="xsd:string" soapAction="" xmlns:ns3="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns3:username" type="xsd:string"/>
+   <ns1:parameter qname="ns3:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="getPlayerStatus" qname="ns4:getPlayerStatus" returnQName="ns4:getPlayerStatusReturn" returnType="xsd:string" soapAction="" xmlns:ns4="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns4:username" type="xsd:string"/>
+   <ns1:parameter qname="ns4:password" type="xsd:string"/>
+   <ns1:parameter qname="ns4:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="suspendAccount" qname="ns5:suspendAccount" returnQName="ns5:suspendAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns5="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns5:adminusername" type="xsd:string"/>
+   <ns1:parameter qname="ns5:adminpassword" type="xsd:string"/>
+   <ns1:parameter qname="ns5:adminipaddress" type="xsd:string"/>
+   <ns1:parameter qname="ns5:usernametosuspend" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="transferAccount" qname="ns6:transferAccount" returnQName="ns6:transferAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns6="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns6:username" type="xsd:string"/>
+   <ns1:parameter qname="ns6:password" type="xsd:string"/>
+   <ns1:parameter qname="ns6:oldipaddress" type="xsd:string"/>
+   <ns1:parameter qname="ns6:newipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="playerSignIn transferAccount getPlayerStatus playerSignOut suspendAccount createPlayerAccount"/>
+  <ns1:parameter name="wsdlPortType" value="ServerEU"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="schemaQualified" value="http://servers.gamelib.com"/>
+  <ns1:parameter name="wsdlServicePort" value="ServerEU"/>
+  <ns1:parameter name="className" value="com.gamelib.servers.ServerEU"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://servers.gamelib.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ServerEUService"/>
+ </ns1:service>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="ServerAS" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="createPlayerAccount" qname="ns7:createPlayerAccount" returnQName="ns7:createPlayerAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns7="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns7:firstname" type="xsd:string"/>
+   <ns1:parameter qname="ns7:lastname" type="xsd:string"/>
+   <ns1:parameter qname="ns7:age" type="xsd:int"/>
+   <ns1:parameter qname="ns7:username" type="xsd:string"/>
+   <ns1:parameter qname="ns7:password" type="xsd:string"/>
+   <ns1:parameter qname="ns7:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="playerSignIn" qname="ns8:playerSignIn" returnQName="ns8:playerSignInReturn" returnType="xsd:string" soapAction="" xmlns:ns8="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns8:username" type="xsd:string"/>
+   <ns1:parameter qname="ns8:password" type="xsd:string"/>
+   <ns1:parameter qname="ns8:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="playerSignOut" qname="ns9:playerSignOut" returnQName="ns9:playerSignOutReturn" returnType="xsd:string" soapAction="" xmlns:ns9="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns9:username" type="xsd:string"/>
+   <ns1:parameter qname="ns9:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="getPlayerStatus" qname="ns10:getPlayerStatus" returnQName="ns10:getPlayerStatusReturn" returnType="xsd:string" soapAction="" xmlns:ns10="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns10:username" type="xsd:string"/>
+   <ns1:parameter qname="ns10:password" type="xsd:string"/>
+   <ns1:parameter qname="ns10:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="suspendAccount" qname="ns11:suspendAccount" returnQName="ns11:suspendAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns11="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns11:adminusername" type="xsd:string"/>
+   <ns1:parameter qname="ns11:adminpassword" type="xsd:string"/>
+   <ns1:parameter qname="ns11:adminipaddress" type="xsd:string"/>
+   <ns1:parameter qname="ns11:usernametosuspend" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="transferAccount" qname="ns12:transferAccount" returnQName="ns12:transferAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns12="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns12:username" type="xsd:string"/>
+   <ns1:parameter qname="ns12:password" type="xsd:string"/>
+   <ns1:parameter qname="ns12:oldipaddress" type="xsd:string"/>
+   <ns1:parameter qname="ns12:newipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="playerSignIn transferAccount getPlayerStatus playerSignOut suspendAccount createPlayerAccount"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="ServerAS"/>
+  <ns1:parameter name="className" value="com.gamelib.servers.ServerAS"/>
+  <ns1:parameter name="wsdlServicePort" value="ServerAS"/>
+  <ns1:parameter name="schemaQualified" value="http://servers.gamelib.com"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://servers.gamelib.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ServerASService"/>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:service name="ServerNA" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="createPlayerAccount" qname="ns13:createPlayerAccount" returnQName="ns13:createPlayerAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns13="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns13:firstname" type="xsd:string"/>
+   <ns1:parameter qname="ns13:lastname" type="xsd:string"/>
+   <ns1:parameter qname="ns13:age" type="xsd:int"/>
+   <ns1:parameter qname="ns13:username" type="xsd:string"/>
+   <ns1:parameter qname="ns13:password" type="xsd:string"/>
+   <ns1:parameter qname="ns13:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="playerSignIn" qname="ns14:playerSignIn" returnQName="ns14:playerSignInReturn" returnType="xsd:string" soapAction="" xmlns:ns14="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns14:username" type="xsd:string"/>
+   <ns1:parameter qname="ns14:password" type="xsd:string"/>
+   <ns1:parameter qname="ns14:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="playerSignOut" qname="ns15:playerSignOut" returnQName="ns15:playerSignOutReturn" returnType="xsd:string" soapAction="" xmlns:ns15="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns15:username" type="xsd:string"/>
+   <ns1:parameter qname="ns15:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="getPlayerStatus" qname="ns16:getPlayerStatus" returnQName="ns16:getPlayerStatusReturn" returnType="xsd:string" soapAction="" xmlns:ns16="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns16:username" type="xsd:string"/>
+   <ns1:parameter qname="ns16:password" type="xsd:string"/>
+   <ns1:parameter qname="ns16:ipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="suspendAccount" qname="ns17:suspendAccount" returnQName="ns17:suspendAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns17="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns17:adminusername" type="xsd:string"/>
+   <ns1:parameter qname="ns17:adminpassword" type="xsd:string"/>
+   <ns1:parameter qname="ns17:adminipaddress" type="xsd:string"/>
+   <ns1:parameter qname="ns17:usernametosuspend" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:operation name="transferAccount" qname="ns18:transferAccount" returnQName="ns18:transferAccountReturn" returnType="xsd:string" soapAction="" xmlns:ns18="http://servers.gamelib.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns18:username" type="xsd:string"/>
+   <ns1:parameter qname="ns18:password" type="xsd:string"/>
+   <ns1:parameter qname="ns18:oldipaddress" type="xsd:string"/>
+   <ns1:parameter qname="ns18:newipaddress" type="xsd:string"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="playerSignIn transferAccount getPlayerStatus playerSignOut suspendAccount createPlayerAccount"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="ServerNA"/>
+  <ns1:parameter name="className" value="com.gamelib.servers.ServerNA"/>
+  <ns1:parameter name="wsdlServicePort" value="ServerNA"/>
+  <ns1:parameter name="schemaQualified" value="http://servers.gamelib.com"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://servers.gamelib.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ServerNAService"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

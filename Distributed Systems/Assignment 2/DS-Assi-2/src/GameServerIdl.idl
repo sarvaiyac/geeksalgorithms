@@ -1,0 +1,16 @@
+module GameServerIdl {
+	interface GameServerInterface{
+		void checkMethod(in string param1, out string reply);
+		
+		void createPlayerAccount(in string firstname, in string lastname, in long age, in string username,
+								   in string password, in string ipaddress, out string success_status);
+		void playerSignIn(in string username,in string password, in string ipaddress, out string success_status);
+		void playerSignOut(in string username,in string ipaddress, out string success_status);
+		void getPlayerStatus(in string username,in string ipaddress, out string success_status);
+		
+		void suspendAccount (in string adminusername, in string adminpassword,in string adminipaddress, 
+							in string usernametosuspend, out string success_status);
+		void transferAccount (in string username, in string password,in string oldipaddress, 
+							in string newipaddress, out string success_status);
+	};
+};

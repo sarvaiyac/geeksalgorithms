@@ -1,0 +1,292 @@
+Enter the name of the input file (enter empty name to quit): twelve-days-of-xmas.txt
+
+===========
+TestWordMap
+===========
+11 : A
+ 3 : BBB
+ 5 : Christmas
+ 7 : Christmas,
+ 5 : Eight
+ 2 : Eleven
+ 8 : Five
+ 9 : Four
+12 : My
+ 4 : Nine
+12 : On
+ 6 : Seven
+ 7 : Six
+ 3 : Ten
+10 : Three
+ 1 : Twelfth
+ 1 : Twelve
+11 : Two
+13 : a
+ 7 : a-laying
+ 3 : a-leaping
+ 5 : a-milking
+ 6 : a-swimming
+11 : and
+ 9 : birds
+ 9 : calling
+ 4 : dancing
+12 : day
+11 : doves
+ 1 : drummers
+ 1 : drumming
+ 1 : eight
+ 1 : eleventh
+ 1 : fifth
+ 1 : first
+ 1 : forth
+10 : french
+12 : gave
+ 7 : geese
+ 8 : golden
+10 : hens
+12 : in
+ 4 : ladies
+ 3 : lords
+12 : love
+ 5 : maids
+12 : me:
+ 1 : ninth
+12 : of
+12 : partridge
+12 : pear
+ 2 : pipers
+ 2 : piping
+ 8 : rings
+ 1 : second
+ 1 : seventh
+ 1 : sixth
+ 6 : swans
+ 1 : tenth
+12 : the
+ 1 : third
+12 : to
+12 : tree.
+12 : true
+11 : turtle
+-------------------------------
+WordMap container size :65
+WordMap total frequency count :428
+-------------------------------
+
+================
+TestWordMultiSet
+================
+11 : A
+13 : a
+12 : My
+12 : On
+12 : in
+12 : of
+12 : to
+ 3 : BBB
+ 7 : Six
+ 3 : Ten
+11 : Two
+11 : and
+12 : day
+12 : me:
+12 : the
+ 8 : Five
+ 9 : Four
+ 4 : Nine
+12 : gave
+10 : hens
+12 : love
+12 : pear
+12 : true
+ 5 : Eight
+ 6 : Seven
+10 : Three
+ 9 : birds
+11 : doves
+ 1 : eight
+ 1 : fifth
+ 1 : first
+ 1 : forth
+ 7 : geese
+ 3 : lords
+ 5 : maids
+ 1 : ninth
+ 8 : rings
+ 1 : sixth
+ 6 : swans
+ 1 : tenth
+ 1 : third
+12 : tree.
+ 2 : Eleven
+ 1 : Twelve
+10 : french
+ 8 : golden
+ 4 : ladies
+ 2 : pipers
+ 2 : piping
+ 1 : second
+11 : turtle
+ 1 : Twelfth
+ 9 : calling
+ 4 : dancing
+ 1 : seventh
+ 7 : a-laying
+ 1 : drummers
+ 1 : drumming
+ 1 : eleventh
+ 5 : Christmas
+ 3 : a-leaping
+ 5 : a-milking
+12 : partridge
+ 7 : Christmas,
+ 6 : a-swimming
+-----------------------------------
+WordMultiSe container size :428
+WordMultiSe total frequency count :428
+-----------------------------------
+
+========================
+TestWordVector: unsorted
+========================
+12 : On
+12 : the
+ 1 : first
+12 : day
+12 : of
+ 5 : Christmas
+12 : My
+12 : true
+12 : love
+12 : gave
+12 : to
+12 : me:
+11 : A
+12 : partridge
+12 : in
+13 : a
+12 : pear
+12 : tree.
+ 1 : second
+11 : Two
+11 : turtle
+11 : doves
+11 : and
+ 1 : third
+10 : Three
+10 : french
+10 : hens
+ 1 : forth
+ 9 : Four
+ 9 : calling
+ 9 : birds
+ 1 : fifth
+ 8 : Five
+ 8 : golden
+ 8 : rings
+ 1 : sixth
+ 7 : Christmas,
+ 7 : Six
+ 7 : geese
+ 7 : a-laying
+ 1 : seventh
+ 6 : Seven
+ 6 : swans
+ 6 : a-swimming
+ 1 : eight
+ 5 : Eight
+ 5 : maids
+ 5 : a-milking
+ 1 : ninth
+ 4 : Nine
+ 4 : ladies
+ 4 : dancing
+ 1 : tenth
+ 3 : Ten
+ 3 : lords
+ 3 : a-leaping
+ 1 : eleventh
+ 2 : Eleven
+ 2 : pipers
+ 2 : piping
+ 1 : Twelfth
+ 1 : Twelve
+ 1 : drummers
+ 1 : drumming
+ 3 : BBB
+
+======================
+TestWordVector: sorted
+======================
+11 : A
+ 3 : BBB
+ 5 : Christmas
+ 7 : Christmas,
+ 5 : Eight
+ 2 : Eleven
+ 8 : Five
+ 9 : Four
+12 : My
+ 4 : Nine
+12 : On
+ 6 : Seven
+ 7 : Six
+ 3 : Ten
+10 : Three
+ 1 : Twelfth
+ 1 : Twelve
+11 : Two
+13 : a
+ 7 : a-laying
+ 3 : a-leaping
+ 5 : a-milking
+ 6 : a-swimming
+11 : and
+ 9 : birds
+ 9 : calling
+ 4 : dancing
+12 : day
+11 : doves
+ 1 : drummers
+ 1 : drumming
+ 1 : eight
+ 1 : eleventh
+ 1 : fifth
+ 1 : first
+ 1 : forth
+10 : french
+12 : gave
+ 7 : geese
+ 8 : golden
+10 : hens
+12 : in
+ 4 : ladies
+ 3 : lords
+12 : love
+ 5 : maids
+12 : me:
+ 1 : ninth
+12 : of
+12 : partridge
+12 : pear
+ 2 : pipers
+ 2 : piping
+ 8 : rings
+ 1 : second
+ 1 : seventh
+ 1 : sixth
+ 6 : swans
+ 1 : tenth
+12 : the
+ 1 : third
+12 : to
+12 : tree.
+12 : true
+11 : turtle
+----------------------------------
+WordVector container size :65
+WordVector total frequency count :428
+----------------------------------
+Enter the name of the input file (enter empty name to quit): 
+bye
+Program ended with exit code: 0

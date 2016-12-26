@@ -1,0 +1,18 @@
+Mar 25, 2014 8:28:58 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account successfully created with username : chintan
+
+Mar 25, 2014 8:29:18 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account with username : chintan Suspend Successfully
+
+Mar 25, 2014 8:29:18 PM com.gamelib.helpers.LogHelper createLog
+INFO: account transferred to AS ( 182... ) with username : chintan
+
+Mar 25, 2014 8:48:41 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account successfully created with username : chintan
+
+Mar 25, 2014 8:48:59 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account with username : chintan Suspend Successfully
+
+Mar 25, 2014 8:48:59 PM com.gamelib.helpers.LogHelper createLog
+INFO: account transferred to AS ( 182.1.1.1 ) with username : chintan
+

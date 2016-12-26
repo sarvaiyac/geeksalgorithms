@@ -1,0 +1,9 @@
+Mar 4, 2014 9:43:45 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account successfully created. 
+
+Mar 4, 2014 9:44:12 PM com.gamelib.helpers.LogHelper createLog
+INFO: Sign in successfully
+
+Mar 4, 2014 9:44:45 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account suspended with username : chintan
+

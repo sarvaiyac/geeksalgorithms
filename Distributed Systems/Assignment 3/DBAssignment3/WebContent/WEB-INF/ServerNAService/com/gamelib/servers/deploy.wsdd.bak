@@ -1,0 +1,60 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ServerNAService WSDL service -->
+
+  <service name="ServerNA" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://servers.gamelib.com"/>
+      <parameter name="wsdlServiceElement" value="ServerNAService"/>
+      <parameter name="schemaQualified" value="http://servers.gamelib.com"/>
+      <parameter name="wsdlServicePort" value="ServerNA"/>
+      <parameter name="className" value="com.gamelib.servers.ServerNASoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="ServerNA"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="createPlayerAccount" qname="operNS:createPlayerAccount" xmlns:operNS="http://servers.gamelib.com" returnQName="retNS:createPlayerAccountReturn" xmlns:retNS="http://servers.gamelib.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:firstname" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lastname" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:age" xmlns:pns="http://servers.gamelib.com" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:username" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:password" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="playerSignIn" qname="operNS:playerSignIn" xmlns:operNS="http://servers.gamelib.com" returnQName="retNS:playerSignInReturn" xmlns:retNS="http://servers.gamelib.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:username" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:password" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="playerSignOut" qname="operNS:playerSignOut" xmlns:operNS="http://servers.gamelib.com" returnQName="retNS:playerSignOutReturn" xmlns:retNS="http://servers.gamelib.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:username" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="getPlayerStatus" qname="operNS:getPlayerStatus" xmlns:operNS="http://servers.gamelib.com" returnQName="retNS:getPlayerStatusReturn" xmlns:retNS="http://servers.gamelib.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:username" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:password" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="suspendAccount" qname="operNS:suspendAccount" xmlns:operNS="http://servers.gamelib.com" returnQName="retNS:suspendAccountReturn" xmlns:retNS="http://servers.gamelib.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:adminusername" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:adminpassword" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:adminipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:usernametosuspend" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="transferAccount" qname="operNS:transferAccount" xmlns:operNS="http://servers.gamelib.com" returnQName="retNS:transferAccountReturn" xmlns:retNS="http://servers.gamelib.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:username" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:password" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:oldipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:newipaddress" xmlns:pns="http://servers.gamelib.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="playerSignIn transferAccount getPlayerStatus playerSignOut suspendAccount createPlayerAccount"/>
+
+  </service>
+</deployment>

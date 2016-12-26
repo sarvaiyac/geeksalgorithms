@@ -1,0 +1,51 @@
+Mar 25, 2014 8:27:31 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account with username : chintansarv Suspend Successfully
+
+Mar 25, 2014 8:28:06 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : AS region, result:NA : 0 online, 1 offline
+EU : 1 online, 0 offline
+AS : 0 online, 1 offline
+
+
+Mar 25, 2014 8:29:18 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account with username : chintan Suspend Successfully
+
+Mar 25, 2014 8:29:59 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : NA region, result:NA : 0 online, 1 offline
+EU : 1 online, 0 offline
+AS : 1 online, 0 offline
+
+
+Mar 25, 2014 8:30:30 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : NA region, result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:39:37 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : NA region, result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:39:38 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : NA region, result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:39:38 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : NA region, result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 0 online, 0 offline
+
+
+Mar 25, 2014 8:48:59 PM com.gamelib.helpers.LogHelper createLog
+INFO: Account with username : chintan Suspend Successfully
+
+Mar 25, 2014 8:49:37 PM com.gamelib.helpers.LogHelper createLog
+INFO: From : NA region, result:NA : 0 online, 0 offline
+EU : 0 online, 0 offline
+AS : 1 online, 0 offline
+
+
